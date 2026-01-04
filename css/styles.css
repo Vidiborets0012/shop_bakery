@@ -11,6 +11,9 @@ body {
   background-color: var(--color-primary-light);
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 ul {
@@ -19,14 +22,25 @@ ul {
 
 .accent {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
-/* .section-title {
-  color: var(--color-primary-dark);
-} */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
 
 .accent-title {
   color: var(--color-brand-dark);
+}
+
+address {
+  font-style: normal;
 }
 
 /* button */
@@ -37,6 +51,7 @@ ul {
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .button:hover {
@@ -48,16 +63,23 @@ ul {
 
 .link {
   color: var(--color-primary-light);
+  text-decoration: none;
 }
 
 .link:hover {
   color: var(--color-brand-light);
+  /* text-decoration: underline; */
+  font-weight: 600;
 }
 
 /* hero section */
 
 .hero-title {
   color: var(--color-primary-light);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 128px;
+  font-weight: 900;
 }
 
 /* advateges section */
@@ -67,9 +89,33 @@ ul {
   background-color: var(--color-brand-light);
 }
 
+.advateges-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* traditions sections */
+
+/* chefs section */
+
+.chef-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
 /* formats section */
 .formats-list {
   color: var(--color-primary-light);
+}
+
+.format-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.format-text {
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* footer */
@@ -78,6 +124,18 @@ ul {
   background-color: var(--color-primary-dark);
 }
 
-.copyright {
-  columns: var(--color-copyright);
+.address-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-dark);
+}
+
+.address-copyright {
+  color: var(--color-copyright);
+  font-size: 14px;
 }
