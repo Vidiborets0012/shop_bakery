@@ -35,7 +35,12 @@
   --color-copyright: #a18268;
 }
 /* global */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
   /* font-family: 'Poppins', sans-serif; */
@@ -45,8 +50,27 @@ body {
   line-height: 1.5;
 }
 
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .accent {
@@ -56,6 +80,24 @@ ul {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-title {
@@ -75,12 +117,14 @@ address {
 /* button */
 
 .button {
+  padding: 16px 32px;
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  border-radius: 8px;
 }
 
 .button:hover {
@@ -103,7 +147,12 @@ address {
 
 /* hero section */
 
+.hero-section {
+  padding: 192px 0;
+}
+
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   text-transform: uppercase;
@@ -125,14 +174,32 @@ address {
 
 /* traditions sections */
 
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
 /* chefs section */
 
+.chefs-title {
+  margin-bottom: 80px;
+}
+
 .chef-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
 }
 
 /* formats section */
+
+.formats-title {
+  margin-bottom: 80px;
+}
+
 .formats-list {
   color: var(--color-primary-light);
 }
@@ -145,6 +212,15 @@ address {
 .format-text {
   font-size: 14px;
   font-weight: 600;
+}
+
+/* contact section */
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-title {
+  margin-bottom: 16px;
 }
 
 /* footer */
