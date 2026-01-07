@@ -69,8 +69,8 @@ p {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin-block: 0;
+  padding-inline-start: 0;
 }
 
 .accent {
@@ -143,6 +143,32 @@ address {
   color: var(--color-brand-light);
   /* text-decoration: underline; */
   font-weight: 600;
+  /* в подальшому виправити цю поведінку (зміщення елементів при ховері) */
+}
+
+/* header */
+header {
+  background-color: #878787;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  flex-grow: 1;
 }
 
 /* hero section */
@@ -156,7 +182,8 @@ address {
   color: var(--color-primary-light);
   text-align: center;
   text-transform: uppercase;
-  font-size: 128px;
+  /* font-size: 128px; */
+  font-size: 108px;
   font-weight: 900;
 }
 
