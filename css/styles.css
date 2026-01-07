@@ -214,6 +214,17 @@ header {
   padding-top: 96px;
 }
 
+.traditions-container {
+  display: flex;
+  /* gap: 100px; */
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
 .traditions-title {
   margin-bottom: 42px;
 }
