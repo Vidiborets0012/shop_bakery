@@ -189,12 +189,21 @@ header {
 
 /* advateges section */
 
-.advateges-list {
-  color: var(--color-primary-light);
+.advateges-section {
+  padding: 16px 0;
   background-color: var(--color-brand-light);
 }
 
+.advateges-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  /* color: var(--color-primary-light); */
+  /* background-color: var(--color-brand-light); */
+}
+
 .advateges-item {
+  color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
